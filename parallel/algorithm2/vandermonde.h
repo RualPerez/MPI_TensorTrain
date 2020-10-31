@@ -1,0 +1,1 @@
+double** vandermonde_vec(int poly_order, int num_instances, int feature, double** X);
