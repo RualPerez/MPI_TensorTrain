@@ -14,7 +14,7 @@ Each of the above directories contains:
 Remember to navigate to the algorithm path that you want to run, which must be one of the followings ```one_core/algorithm1```, ```one_core/algorithm2```, ```parallel/algorithm1```, ```parallel/algorithm2```:
 ```
 cd /path/to/algorithm
-make clean 
+make realclean 
 make
 ```
 
