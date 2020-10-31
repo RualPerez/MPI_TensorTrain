@@ -27,7 +27,7 @@ The executables may take one of the following input arguments (see examples in `
 | rank.txt | File with number of TT-ranks and each Grank  |
 | X.txt | File with number of instances, dimension and all data variables |
 | y.txt | File with number of instances and all data outputs variables (target/labels) |
-| 48 | Matrix Blocksize for parallelizing $ C^t \cdot C $ (just for the  parallelized algorithm2)  |
+| 48 | Matrix Blocksize for parallelizing $$ C^t \cdot C $$ (just for the  parallelized algorithm2)  |
 
 Additionally, for algorithm1, the trained tensor weights (TT cores) and the input data are directly read from ```Data/algorithm1/G_*.txt``` and ```Data/X.txt```, respectively. Thus, you must save your TT cores in that path & format. 
 
