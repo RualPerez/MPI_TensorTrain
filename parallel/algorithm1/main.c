@@ -116,7 +116,7 @@ int main(int argc, char *argv []) {
 		//ones_3D_tensor(general_rank, poly_order, general_rank, G_list[i]);
 		
 		// Create filename: ("G_i/G_%d.txt", i)
-		snprintf(filename, sizeof(filename), "Data/feat_%d/G_p%d_r%d/G_%d.txt", num_features, poly_order[0], Grank[1], i);
+		snprintf(filename, sizeof(filename), "../../Data/algorithm1/G_%d.txt", num_features, poly_order[0], Grank[1], i);
 		G_list[i] = read_3Dtensor(filename);
 	}
 
