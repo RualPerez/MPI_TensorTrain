@@ -20,11 +20,10 @@ int main(int argc, char *argv []) {
         Data/rank_2.txt         --> File with number of TT-ranks and each Grank
         Data/X_20640.txt        --> File with number of instances, dimension and all data variables
         Data/y_20640.txt        --> File with number of instancesand all data outputs variables
-        48                      --> Blocksize
     */
 
     // Checking number of input arguments
-    if (argc < 6) printf("\nERROR! Too few input arguments!\n");
+    if (argc < 5) printf("\nERROR! Too few input arguments!\n");
 
     // Read hyperparameters (command-line inputs)
     int num_features = read_int(argv[1]);
@@ -35,9 +34,6 @@ int main(int argc, char *argv []) {
     int num_instances = read_int(argv[3]);
     double** X = read_matrix(argv[3]);
     double* y = read_vector(argv[4]);
-     
-    // Read blocksize
-    int block_size = atoi(argv[5]);
 
     /**************************************/
     // Allocate and initialize TT-cores (G)
