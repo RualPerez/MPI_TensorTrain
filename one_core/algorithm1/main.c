@@ -25,7 +25,7 @@ int main(int argc, char *argv []) {
 		//ones_3D_tensor(rank[i], poly_order[i], rank[i+1], G_list[i]);
 		
 		// Create filename: ("G_i/G_%d.txt", i)
-		snprintf(filename, sizeof(filename), "Data/G_%d.txt", i);
+		snprintf(filename, sizeof(filename), "../../Data/algorithm1/G_%d.txt", i);
 		G_list[i] = read_3Dtensor(filename);
 	}
 
